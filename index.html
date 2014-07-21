@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Github custom search</title>
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/gcs.css" rel="stylesheet"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/gcs.js"></script>
+    <script>
+     $(function(){
+       gcs.init($('#gcs'));
+     });
+    </script>
+  </head>
+  <body>
+    <div id="gcs">
+      <div class="gcs-condition">
+        <input id="gcs-keyword" name="" type="text" value="" placeholder="Search keyword"/>
+        <select id="gcs-sort" name="">
+        </select>
+        <a class="gcs-search" href="#">SEARCH</a>
+      </div>
+      
+      <div class="gcs-result">
+        
+      </div>  
+    </div>
+  </body>
+</html>
